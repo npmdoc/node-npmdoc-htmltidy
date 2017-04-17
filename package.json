@@ -1,1 +1,39 @@
-{     "devDependencies": {         "htmltidy": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-htmltidy",     "homepage": "https://github.com/npmdoc/node-npmdoc-htmltidy",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-htmltidy.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [htmltidy (v0.0.6)](https://github.com/vavere/htmltidy#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-htmltidy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-htmltidy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-htmltidy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-htmltidy)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "htmltidy": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-htmltidy",
+    "keywords": [
+        "documentation",
+        "htmltidy"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_htmltidy.js",
+    "name": "npmdoc-htmltidy",
+    "nameAlias": "npmdoc_htmltidy",
+    "nameOriginal": "npmdoc-htmltidy",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-htmltidy.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
