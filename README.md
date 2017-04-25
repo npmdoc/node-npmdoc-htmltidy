@@ -1,4 +1,7 @@
-# api documentation for  [htmltidy (v0.0.6)](https://github.com/vavere/htmltidy#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-htmltidy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-htmltidy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-htmltidy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-htmltidy)
+# npmdoc-htmltidy
+
+#### basic api documentation for  [htmltidy (v0.0.6)](https://github.com/vavere/htmltidy#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-htmltidy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-htmltidy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-htmltidy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-htmltidy)
+
 #### tidy bad html
 
 [![NPM](https://nodei.co/npm/htmltidy.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/htmltidy)
@@ -62,7 +65,8 @@
         "type": "git",
         "url": "git://github.com/vavere/htmltidy.git"
     },
-    "version": "0.0.6"
+    "version": "0.0.6",
+    "bin": {}
 }
 ```
 
